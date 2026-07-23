@@ -1,8 +1,15 @@
 aid: atc-alquila-tu-cancha
 name: ATC (Alquila tu cancha)
-description: ATC (Alquila tu cancha) is a company surfaced as a portfolio company of 500-global and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: ATC (Alquila Tu Cancha) is an Argentine sports-technology company, founded in 2020, that
+  operates LATAM's leading platform for booking amateur sports venues — courts for football, padel,
+  tennis and more — alongside cloud management software for the clubs and complexes that run them.
+  Consumers search real-time availability by location, sport and time and reserve in a few steps through
+  the ATC Sports mobile apps and web app, with online payments guaranteed via Mercado Pago. Clubs use
+  the ATC management software to handle online reservations, cash control, reporting and service sales.
+  ATC operates across eight-plus countries including Argentina, Peru, Chile, Uruguay, Panama, Mexico,
+  Colombia, Costa Rica and the United States, spanning 500-plus venues and more than 200,000 active
+  players. The company is a 500 Global (500 Latam) portfolio company. It exposes no public developer
+  API, SDK or developer portal at this time; this profile tracks its public web presence.
 url: https://raw.githubusercontent.com/api-evangelist/atc-alquila-tu-cancha/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +17,31 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://atcsports.io/static/ISOLOGO.svg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Sports
+- Booking
+- Reservations
+- Sports Management
+- Payments
+- Mobile
+- SaaS
+- LATAM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +49,27 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/atc-alquila-tu-cancha-domain-security.yml
 - type: Website
+  url: https://atcsports.io
+- type: Website
+  name: Brand domain (alquilatucancha.com)
   url: https://alquilatucancha.com
+- type: Pricing
+  url: https://atcsports.io/software-gestion-deportiva
+- type: SignUp
+  name: Free trial for clubs
+  url: https://atcsports.io/software-para-clubes-gratis
+- type: Login
+  url: https://atcsports.io/login
+- type: PrivacyPolicy
+  url: https://atcsports.io/privacy-policy
+- type: Support
+  name: Contact email
+  url: mailto:contacto@atcsports.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
